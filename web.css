@@ -1,4 +1,8 @@
-h1{
-    font-size: 50px;
-    background-color: white;
+.image_class{
+    height: 400px;
+
+}
+
+.main_text{
+    text-align: center;
 }
