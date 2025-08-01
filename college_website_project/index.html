@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой колледж - Информационный портал</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Мой Колледж</h1>
+            <p>Образование для будущего</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#main" class="active">Главная</a></li>
+                <li><a href="#about">О колледже</a></li>
+                <li><a href="#programs">Программы</a></li>
+                <li><a href="#events">События</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Добро пожаловать в Мой Колледж</h2>
+            <p>Ваш путь к успешному будущему начинается здесь</p>
+            <button class="btn" onclick="showAlert()">Подать заявку</button>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="section-title">О нашем колледже</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Наш колледж основан в 2005 году и является одним из ведущих учебных заведений в области информационных технологий, экономики и дизайна.</p>
+                <p>Мы предлагаем современные образовательные программы, разработанные совместно с ведущими компаниями и экспертами отрасли.</p>
+                <p>Наша миссия — подготовить квалифицированных специалистов, готовых к вызовам современного рынка труда.</p>
+                <details>
+                    <summary>Узнать больше о нашей истории</summary>
+                    <p>С момента основания наш колледж выпустил более 5000 специалистов, многие из которых сейчас работают в крупнейших компаниях страны и за рубежом. Мы постоянно развиваемся, обновляем учебные программы и технические средства обучения.</p>
+                </details>
+            </div>
+            <div class="about-image">
+                <img src="images/college.jpg" alt="Здание колледжа">
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="container">
+        <h2 class="section-title">Наши программы</h2>
+        <div class="programs-grid">
+            <div class="program-card">
+                <img src="images/it.jpg" alt="Информационные технологии">
+                <h3>Информационные технологии</h3>
+                <p>Программирование, веб-разработка, администрирование сетей и баз данных.</p>
+                <a href="#" class="btn-small">Подробнее</a>
+            </div>
+            <div class="program-card">
+                <img src="images/economics.jpg" alt="Экономика и финансы">
+                <h3>Экономика и финансы</h3>
+                <p>Бухгалтерский учет, финансовый менеджмент, экономический анализ.</p>
+                <a href="#" class="btn-small">Подробнее</a>
+            </div>
+            <div class="program-card">
+                <img src="images/design.jpg" alt="Дизайн">
+                <h3>Дизайн</h3>
+                <p>Графический дизайн, веб-дизайн, дизайн интерфейсов, 3D-моделирование.</p>
+                <a href="#" class="btn-small">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="container">
+        <h2 class="section-title">Предстоящие события</h2>
+        <div class="events-list">
+            <div class="event-item">
+                <div class="event-date">
+                    <span class="day">15</span>
+                    <span class="month">сен</span>
+                </div>
+                <div class="event-details">
+                    <h3>День открытых дверей</h3>
+                    <p>Приглашаем всех желающих познакомиться с нашим колледжем, преподавателями и студентами.</p>
+                    <p><strong>Время:</strong> 10:00 - 15:00</p>
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-date">
+                    <span class="day">22</span>
+                    <span class="month">сен</span>
+                </div>
+                <div class="event-details">
+                    <h3>IT-конференция</h3>
+                    <p>Ежегодная конференция с участием ведущих IT-компаний и экспертов отрасли.</p>
+                    <p><strong>Время:</strong> 11:00 - 17:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="container">
+        <h2 class="section-title">Контакты</h2>
+        <div class="contacts-container">
+            <div class="contact-info">
+                <h3>Наш адрес</h3>
+                <p>г. Москва, ул. Примерная, д. 123</p>
+                <h3>Телефон</h3>
+                <p>+7 (123) 456-78-90</p>
+                <h3>Email</h3>
+                <p>info@mycollege.ru</p>
+            </div>
+            <div class="contact-form">
+                <h3>Отправить сообщение</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Мой Колледж</h2>
+                <p>© 2025 Все права защищены</p>
+            </div>
+            <div class="footer-links">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="#about">О колледже</a></li>
+                    <li><a href="#programs">Программы</a></li>
+                    <li><a href="#events">События</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">VK</a>
+                    <a href="#" class="social-icon">Telegram</a>
+                    <a href="#" class="social-icon">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
