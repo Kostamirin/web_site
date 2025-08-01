@@ -1,0 +1,24 @@
+This file is a placeholder for the images directory.
+
+In a real project, you would need to add the following images:
+1. hero.jpg - A large banner image for the hero section
+2. college.jpg - An image of the college building for the about section
+3. it.jpg - An image representing IT programs
+4. economics.jpg - An image representing economics programs
+5. design.jpg - An image representing design programs
+
+Since we can't create actual image files in this environment, you would need to:
+1. Find appropriate royalty-free images
+2. Optimize them for web use (compress them to reduce file size)
+3. Save them in this directory with the filenames mentioned above
+4. Make sure they match the dimensions expected in the CSS (especially for the program cards which expect 300px width images)
+
+For testing purposes, you can use placeholder image services like:
+- https://placeholder.com/
+- https://picsum.photos/
+- https://placehold.co/
+
+Example URLs:
+- https://picsum.photos/1200/600 (for hero.jpg)
+- https://picsum.photos/600/400 (for college.jpg)
+- https://picsum.photos/300/200 (for program images)
